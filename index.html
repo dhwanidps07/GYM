@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitRoom Clone - Fitness Tracking App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Side Navigation -->
+        <nav class="side-nav">
+            <div class="logo">
+                <i class="fas fa-dumbbell"></i>
+                <span>FitRoom</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-running"></i> Workouts</a></li>
+                <li><a href="#"><i class="fas fa-dumbbell"></i> Exercises</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Progress</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+            <div class="user-profile">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                <div class="user-info">
+                    <span class="username">John Doe</span>
+                    <span class="user-level">Intermediate</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Dashboard</h1>
+                <div class="header-actions">
+                    <button class="btn primary"><i class="fas fa-plus"></i> New Workout</button>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Stats Overview -->
+            <section class="stats-overview">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #4a6bff20; color: #4a6bff;">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Calories Burned</h3>
+                        <p>1,240 <span>kcal</span></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #ff6b6b20; color: #ff6b6b;">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Workout Time</h3>
+                        <p>6 <span>hours</span></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #6bceff20; color: #6bceff;">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Exercises</h3>
+                        <p>32 <span>completed</span></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #6bff8e20; color: #6bff8e;">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Current Streak</h3>
+                        <p>7 <span>days</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Workout Plans -->
+            <section class="workout-plans">
+                <div class="section-header">
+                    <h2>Your Workout Plans</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="plans-grid">
+                    <div class="plan-card">
+                        <div class="plan-image" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b')">
+                            <span class="plan-level">Beginner</span>
+                        </div>
+                        <div class="plan-info">
+                            <h3>Full Body Beginner</h3>
+                            <p>3 workouts/week • 45 min</p>
+                            <div class="plan-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%"></div>
+                                </div>
+                                <span>65% complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-card">
+                        <div class="plan-image" style="background-image: url('https://images.unsplash.com/photo-1534258936925-c58bed479fcb')">
+                            <span class="plan-level">Intermediate</span>
+                        </div>
+                        <div class="plan-info">
+                            <h3>Upper Body Strength</h3>
+                            <p>4 workouts/week • 60 min</p>
+                            <div class="plan-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 30%"></div>
+                                </div>
+                                <span>30% complete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-card">
+                        <div class="plan-image" style="background-image: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b')">
+                            <span class="plan-level">Advanced</span>
+                        </div>
+                        <div class="plan-info">
+                            <h3>Advanced HIIT</h3>
+                            <p>5 workouts/week • 30 min</p>
+                            <div class="plan-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 15%"></div>
+                                </div>
+                                <span>15% complete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="recent-activity">
+                <div class="section-header">
+                    <h2>Recent Activity</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <div class="activity-info">
+                            <h3>Completed: Full Body Workout</h3>
+                            <p>Today • 45 minutes • 320 kcal</p>
+                        </div>
+                        <div class="activity-more">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="activity-info">
+                            <h3>New PR: Deadlift</h3>
+                            <p>Yesterday • 185 lbs</p>
+                        </div>
+                        <div class="activity-more">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-info">
+                            <h3>New Friend: Sarah Johnson</h3>
+                            <p>2 days ago</p>
+                        </div>
+                        <div class="activity-more">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="today-workout">
+                <h2>Today's Workout</h2>
+                <div class="workout-card">
+                    <h3>Upper Body Strength</h3>
+                    <p>4 exercises • 45 minutes</p>
+                    <button class="btn primary full-width">Start Workout</button>
+                </div>
+            </div>
+
+            <div class="community-activity">
+                <h2>Community Activity</h2>
+                <div class="community-item">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                    <div class="community-info">
+                        <h3>Lisa completed Chest Workout</h3>
+                        <p>45 minutes ago</p>
+                    </div>
+                </div>
+                <div class="community-item">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User">
+                    <div class="community-info">
+                        <h3>Mike set a new PR: Bench Press</h3>
+                        <p>2 hours ago</p>
+                    </div>
+                </div>
+                <div class="community-item">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+                    <div class="community-info">
+                        <h3>Anna started Yoga Challenge</h3>
+                        <p>4 hours ago</p>
+                    </div>
+                </div>
+                <a href="#" class="view-all">See More Activity</a>
+            </div>
+        </aside>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
